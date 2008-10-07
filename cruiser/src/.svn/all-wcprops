@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/svn/!svn/ver/15/trunk/src
+END
+module.js
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/15/trunk/src/module.js
+END
+rsd.js
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/15/trunk/src/rsd.js
+END
+enumerable.js
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/15/trunk/src/enumerable.js
+END
+behaviors.js
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/15/trunk/src/behaviors.js
+END
+parsing.js
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/14/trunk/src/parsing.js
+END
+specifications.js
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/15/trunk/src/specifications.js
+END

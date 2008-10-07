@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>BoxSelect</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+<link href="../../resources/css/ext-all.css" media="screen" rel="Stylesheet" type="text/css" />
+<link href="../../examples/examples.css" media="screen" rel="Stylesheet" type="text/css" />
+
+<script src="../../adapter/ext/ext-base.js" type="text/javascript"></script>
+<script src="../../ext-all-debug.js" type="text/javascript"></script>
+<script src="../form/states.js" type="text/javascript"></script>
+<script type="text/javascript" src="Ext.ux.BoxSelect.js"></script>
+
+<link href="boxselect.css" media="screen" rel="Stylesheet" type="text/css" />
+
+<script type="text/javascript">
+	Ext.onReady(function() {
+
+	Ext.QuickTips.init();
+
+	var states = new Ext.data.SimpleStore({
+		fields: ['abbr', 'state', 'nick'],
+		data: Ext.exampledata.states
+	});
+	
+	var select = new Ext.ux.BoxSelect({
+		fieldLabel: 'Send To',
+		name: 'to[]',
+		anchor:'100%',
+		store: states,
+		mode: 'local',
+		displayField: 'state',
+		valueField: 'abbr'
+	});
+	
+	var form = new Ext.form.FormPanel({
+		baseCls: 'x-plain',
+		labelWidth: 55,
+		defaultType: 'textfield',
+		items: [
+			select,
+			{
+				fieldLabel: 'Subject',
+				name: 'subject',
+				anchor: '100%'
+			},
+			{
+				xtype: 'textarea',
+				hideLabel: true,
+				name: 'msg',
+				anchor: '100% -53'
+			}
+		]
+	});
+	
+	var window = new Ext.Window({
+		title: 'Resize Me',
+		width: 500,
+		height:300,
+		minWidth: 300,
+		minHeight: 200,
+		layout: 'fit',
+		plain:true,
+		bodyStyle:'padding:5px;',
+		buttonAlign:'center',
+		items: form,
+		maximizable: true,
+		
+		buttons: [{
+			text: 'Send',
+			scope: this,
+			handler: function(){
+				alert(select.getValues());
+			}
+		},{
+			text: 'Cancel'
+		}]
+	});
+	
+	window.show();
+	});
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/15/trunk/test
+END
+accept.png
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/15/trunk/test/accept.png
+END
+exclamation.png
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/15/trunk/test/exclamation.png
+END
+information.png
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/15/trunk/test/information.png
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/15/trunk/test/index.html
+END
+specifications.css
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/15/trunk/test/specifications.css
+END
+specification.js
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/test/specification.js
+END

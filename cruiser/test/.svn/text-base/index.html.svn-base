@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <!-- library support -->
+    <script type='text/javascript' src='../src/module.js'></script>
+    <script type='text/javascript' src='../src/enumerable.js'></script>
+    <script type='text/javascript' src='../src/parsing.js'></script>
+    <script type='text/javascript' src='../src/rsd.js'></script>
+    <script type='text/javascript' src='../src/jquery-1.2.1.pack.js'></script>
+    <script type='text/javascript' src='../src/specifications.js'></script>
+    
+    <script type='text/javascript' src='specification.js'></script>
+
+    <link rel='stylesheet' type='text/css' href='../src/specifications.css'>
+    
+  </head>
+  
+  <body>
+    <h1>Cruiser Tests</h1>
+    <div class='totals'/>
+    <div class='results'/>
+    <div class='sidebar'>
+      <div class='log'>
+        <h1>Log</h1>
+      </div>
+    </div>
+  </body>
+</html>
